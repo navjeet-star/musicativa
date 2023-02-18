@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+<FrameLayout
+    android:padding="@dimen/_5sdp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        tools:visibility="visible"
+        android:visibility="gone"
+        android:id="@+id/text_view_no_data_found"
+        android:textColor="@color/colorGrey"
+        android:text="No Data found!!!"
+        android:textSize="18sp"
+        android:gravity="center"
+        android:layout_gravity="center_horizontal|center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Spinner
+            android:visibility="gone"
+            tools:visibility="visible"
+            android:id="@+id/spinnerSelectDate"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_gravity="right"
+            android:entries="@array/months"
+            />
+        <LinearLayout
+            tools:visibility="visible"
+            android:visibility="gone"
+
+            android:id="@+id/container_activity"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <LinearLayout
+            android:visibility="gone"
+            android:background="@drawable/activity_header_layout_drawable"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp">
+            <TextView
+                android:background="@drawable/activity_header_item_drawable"
+                android:textColor="@color/colorWhite"
+                android:gravity="center"
+                android:textSize="@dimen/_10sdp"
+                android:text="Sub Category Name"
+                android:layout_weight="1.5"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"/>
+            <TextView
+                android:background="@drawable/activity_header_item_drawable"
+                android:textColor="@color/colorWhite"
+                android:gravity="center"
+                android:textSize="@dimen/_10sdp"
+                android:text="Date"
+                android:layout_weight="1.2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"/>
+            <TextView
+                android:background="@drawable/activity_header_item_drawable"
+                android:textColor="@color/colorWhite"
+                android:gravity="center"
+                android:textSize="@dimen/_10sdp"
+                android:text="Number of Clicks"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"/>
+            <TextView
+                android:background="@drawable/activity_header_item_drawable"
+                android:textColor="@color/colorWhite"
+                android:gravity="center"
+                android:textSize="@dimen/_10sdp"
+                android:text="Duration"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"/>
+            <TextView
+                android:background="@drawable/activity_header_item_drawable"
+                android:textColor="@color/colorWhite"
+                android:gravity="center"
+                android:textSize="@dimen/_10sdp"
+                android:text="Comment"
+                android:layout_weight="1.5"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"/>
+
+        </LinearLayout>
+
+
+
+    <androidx.recyclerview.widget.RecyclerView
+
+        android:id="@+id/recycler_view_comments"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</FrameLayout>
+
+
+</layout>

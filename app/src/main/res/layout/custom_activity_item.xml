@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        android:background="@drawable/activity_header_layout_drawable"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="@dimen/_60sdp"
+        android:maxHeight="@dimen/_500sdp">
+        <TextView
+            android:id="@+id/textViewSubCategoryName"
+            android:padding="@dimen/_2sdp"
+            android:background="@drawable/activity_item_drawable"
+            android:textColor="@color/colorBlack"
+            android:gravity="center"
+            android:textSize="@dimen/_10sdp"
+            android:text="Sub Category Name"
+            android:layout_weight="1.5"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"/>
+        <TextView
+            android:id="@+id/textViewDate"
+            android:background="@drawable/activity_item_drawable"
+            android:textColor="@color/colorBlack"
+            android:gravity="center"
+            android:padding="@dimen/_2sdp"
+
+            android:textSize="@dimen/_10sdp"
+            android:text="2020-10-23"
+            android:layout_weight="1.2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"/>
+        <TextView
+            android:id="@+id/textViewNumberOfClicks"
+            android:padding="@dimen/_2sdp"
+            android:background="@drawable/activity_item_drawable"
+            android:textColor="@color/colorBlack"
+            android:gravity="center"
+            android:textSize="@dimen/_10sdp"
+            android:text="Number of Clicks"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"/>
+        <TextView
+            android:id="@+id/textViewDuration"
+            android:padding="@dimen/_2sdp"
+            android:background="@drawable/activity_item_drawable"
+            android:textColor="@color/colorBlack"
+            android:gravity="center"
+            android:textSize="@dimen/_10sdp"
+            android:text="Duration"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"/>
+        <TextView
+            android:id="@+id/textviewComments"
+            android:padding="@dimen/_3sdp"
+            android:background="@drawable/activity_item_drawable"
+            android:textColor="@color/colorBlack"
+            android:gravity="center"
+            android:scrollbars = "vertical"
+            android:textSize="@dimen/_10sdp"
+            android:text="Comments jkdjdk kjsdhkd skjdhk kjdsd kjsdhd"
+            android:layout_weight="1.5"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"/>
+
+    </LinearLayout>
+</layout>

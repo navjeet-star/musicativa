@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:ripple="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="data"
+            type="com.developer.musicatiiva.activities.RecordingActivity" />
+        <variable name="data1"
+            type="com.developer.musicatiiva.stopwatch.TimerValue"/>
+    </data>
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.RecordingActivity"
+    android:background="@color/colorWhite">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true">
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/textTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Voice recording"
+            android:layout_centerHorizontal="true"
+            android:textSize="@dimen/_20sdp"
+            android:textColor="@color/colorBlack"/>
+
+        <RelativeLayout
+            android:id="@+id/micRL"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/textTV">
+        <com.developer.musicatiiva.utils.RipplePulseLayout
+            android:layout_width="@dimen/_200sdp"
+            android:layout_height="@dimen/_200sdp"
+            android:clipChildren="false"
+            ripple:rippleColor="#3D66C7"
+            ripple:rippleType="fill"
+            ripple:strokeWidth="2dp"
+            ripple:startRadius="42dp"
+            ripple:endRadius="100dp"
+            ripple:duration="2000"
+            android:id="@+id/mRipplePulseLayout">
+
+            <RelativeLayout
+                android:layout_width="@dimen/_120sdp"
+                android:layout_height="@dimen/_120sdp"
+                android:background="@drawable/circle_solid"
+                android:layout_centerInParent="true"
+                >
+            <com.developer.musicatiiva.utils.RoundedImageView
+                android:layout_width="@dimen/_90sdp"
+                android:layout_height="@dimen/_90sdp"
+                android:src="@drawable/mic"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/circle_solid"/>
+           // </RelativeLayout>
+        </com.developer.musicatiiva.utils.RipplePulseLayout>
+        </RelativeLayout>
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/timerTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@={data1.value}"
+        android:textSize="@dimen/_30sdp"
+        android:textColor="@color/colorBlack"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/micRL"
+        />
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/buttonLL"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="@dimen/_30sdp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/timerTV"
+        android:layout_marginTop="@dimen/_30sdp">
+
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/playIV"
+            android:layout_width="@dimen/_60sdp"
+            android:layout_height="@dimen/_60sdp"
+            android:src="@drawable/ic_play"
+            android:tint="@color/colorBlack"
+            android:onClick="@{()->data.onPlayClicked()}"
+            />
+
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/pauseIV"
+            android:layout_width="@dimen/_60sdp"
+            android:layout_height="@dimen/_60sdp"
+            android:src="@drawable/ic_pause"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:onClick="@{()->data.onPauseClicked()}"/>
+
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/stopIV"
+            android:layout_width="@dimen/_60sdp"
+            android:layout_height="@dimen/_60sdp"
+            android:src="@drawable/ic_stop"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:onClick="@{()->data.onStopClicked()}"/>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="@dimen/_100sdp"
+        android:layout_height="@dimen/_50sdp"
+        android:text="cancel"
+        android:layout_below="@id/buttonLL"
+        android:layout_centerHorizontal="true"
+        android:backgroundTint="@color/colorPrimary"
+        android:textColor="@color/colorWhite"
+        />
+    </RelativeLayout>
+</RelativeLayout>
+</layout>

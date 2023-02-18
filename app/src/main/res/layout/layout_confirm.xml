@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/_250sdp"
+    android:layout_height="wrap_content"
+    android:background="@drawable/white_background"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    >
+
+    <TextView
+        android:layout_marginTop="@dimen/_10sdp"
+        android:id="@+id/txt_dia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textAlignment="center"
+        android:text="Do you want to update the activity\ncounter to"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/_14sdp"
+
+        />
+
+    <View
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/colorGrey"
+        />
+
+    <LinearLayout
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_weight="1"
+            android:id="@+id/btn_yes"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:background="@android:color/white"
+            android:clickable="true"
+            android:text="Yes"
+            android:gravity="center"
+            android:textColor="#5DBCD2"
+            android:textStyle="bold"
+            android:textSize="@dimen/_12sdp"
+            />
+        <View
+            android:layout_width="0.5dp"
+            android:layout_height="match_parent"
+            android:background="@mipmap/timer_stop_green"
+
+            />
+        <TextView
+            android:layout_weight="1"
+            android:id="@+id/btn_no"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="5dp"
+            android:background="@android:color/white"
+            android:clickable="true"
+            android:text="No"
+            android:gravity="center"
+            android:textColor="#5DBCD2"
+            android:textSize="@dimen/_12sdp"
+            android:textStyle="bold"/>
+    </LinearLayout>
+</LinearLayout>

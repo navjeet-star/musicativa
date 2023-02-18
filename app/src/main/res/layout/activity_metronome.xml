@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.MetronomeActivity">
+
+    <it.beppi.knoblibrary.Knob
+        android:id="@+id/knob"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        app:kIndicatorColor="#00FFFFFF"
+        app:kKnobDrawable="@drawable/ic_knob"
+        app:kKnobDrawableRotates="true"
+        app:kNumberOfStates="6"
+        app:kSelectedStateMarkerColor="#2196F3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.9" />
+
+    <ImageButton
+        android:id="@+id/playPauseBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="18dp"
+        android:layout_marginBottom="24dp"
+        android:background="#00FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/ic_playbtn"
+        tools:ignore="VectorDrawableCompat" />
+
+    <ImageButton
+        android:id="@+id/tapTempoBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="18dp"
+        android:layout_marginBottom="24dp"
+        android:background="#00FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/ic_tapbtn"
+        tools:ignore="VectorDrawableCompat" />
+
+    <TextView
+        android:id="@+id/bpmTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="176dp"
+        android:layout_marginEnd="176dp"
+        android:fontFamily="@font/lato_regular"
+        android:text="120"
+        android:textAlignment="center"
+        android:textColor="#404040"
+        android:textSize="32sp"
+        app:layout_constraintBottom_toTopOf="@+id/textView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="176dp"
+        android:layout_marginEnd="176dp"
+        android:layout_marginBottom="16dp"
+        android:fontFamily="@font/lato_regular"
+        android:text="BPM"
+        android:textAlignment="center"
+        android:textColor="#404040"
+        app:layout_constraintBottom_toTopOf="@+id/knob"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.483"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageButton
+        android:id="@+id/timeSignatureBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="32dp"
+        android:background="#00FFFFFF"
+        app:layout_constraintBottom_toBottomOf="@+id/textView"
+        app:layout_constraintEnd_toStartOf="@+id/textView"
+        app:layout_constraintTop_toTopOf="@+id/textView"
+        app:srcCompat="@drawable/ic_blankbtn"
+        tools:ignore="VectorDrawableCompat" />
+
+    <ImageButton
+        android:id="@+id/subdivisionBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:background="#00FFFFFF"
+        app:layout_constraintBottom_toBottomOf="@+id/textView"
+        app:layout_constraintStart_toEndOf="@+id/textView"
+        app:layout_constraintTop_toTopOf="@+id/textView"
+        app:srcCompat="@drawable/ic_blankbtn"
+        tools:ignore="VectorDrawableCompat" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/lato_regular"
+        android:text="/"
+        android:textAlignment="center"
+        android:textColor="#B7B7B7"
+        android:textSize="48sp"
+        app:layout_constraintBottom_toTopOf="@+id/bpmTextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/buttonLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="8dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/minusBtnBottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="#00FFFFFF"
+        android:tint="#00FFFFFF"
+        app:layout_constraintEnd_toEndOf="@+id/subdivisionBtn"
+        app:layout_constraintStart_toStartOf="@+id/subdivisionBtn"
+        app:layout_constraintTop_toBottomOf="@+id/subdivisionBtn"
+        app:srcCompat="@drawable/ic_minusbtn"
+        tools:ignore="VectorDrawableCompat" />
+
+    <ImageButton
+        android:id="@+id/plusBtnTop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:background="#00FFFFFF"
+        app:layout_constraintBottom_toTopOf="@+id/timeSignatureBtn"
+        app:layout_constraintEnd_toEndOf="@+id/timeSignatureBtn"
+        app:layout_constraintStart_toStartOf="@+id/timeSignatureBtn"
+        app:srcCompat="@drawable/ic_plusbtn"
+        tools:ignore="VectorDrawableCompat" />
+
+    <ImageButton
+        android:id="@+id/minusBtnTop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="#00FFFFFF"
+        app:layout_constraintEnd_toEndOf="@+id/timeSignatureBtn"
+        app:layout_constraintStart_toStartOf="@+id/timeSignatureBtn"
+        app:layout_constraintTop_toBottomOf="@+id/timeSignatureBtn"
+        app:srcCompat="@drawable/ic_minusbtn"
+        tools:ignore="VectorDrawableCompat" />
+
+    <ImageButton
+        android:id="@+id/plusBtnBottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:background="#00FFFFFF"
+        app:layout_constraintBottom_toTopOf="@+id/subdivisionBtn"
+        app:layout_constraintEnd_toEndOf="@+id/subdivisionBtn"
+        app:layout_constraintStart_toStartOf="@+id/subdivisionBtn"
+        app:srcCompat="@drawable/ic_plusbtn"
+        tools:ignore="VectorDrawableCompat" />
+
+    <TextView
+        android:id="@+id/topTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/lato_regular"
+        android:text="5"
+        android:textAlignment="center"
+        android:textColor="#404040"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/timeSignatureBtn"
+        app:layout_constraintEnd_toEndOf="@+id/timeSignatureBtn"
+        app:layout_constraintStart_toStartOf="@+id/timeSignatureBtn"
+        app:layout_constraintTop_toTopOf="@+id/timeSignatureBtn" />
+
+    <TextView
+        android:id="@+id/bottomTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/lato_regular"
+        android:text="4"
+        android:textAlignment="center"
+        android:textColor="#404040"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/subdivisionBtn"
+        app:layout_constraintEnd_toEndOf="@+id/subdivisionBtn"
+        app:layout_constraintStart_toStartOf="@+id/subdivisionBtn"
+        app:layout_constraintTop_toTopOf="@+id/subdivisionBtn" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

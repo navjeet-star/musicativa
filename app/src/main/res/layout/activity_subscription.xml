@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    tools:context=".activities.SubscriptionActivity">
+
+    <RelativeLayout
+        android:id="@+id/relativeTop"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_50sdp"
+        android:background="@color/colorPrimary">
+
+    </RelativeLayout>
+
+    <ScrollView
+
+        android:layout_below="@+id/relativeTop"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/ImgLogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/_40sdp"
+        android:src="@mipmap/ic_musicative_foregroundd"
+
+        />
+
+    <TextView
+
+        android:id="@+id/txtEdge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ImgLogo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:fontFamily="@font/lato_semibold"
+        android:text="Musicatiba\nThe Musician's Edge"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimary"
+        android:textSize="@dimen/_14sdp"
+
+        />
+
+    <TextView
+
+        android:id="@+id/txtSub"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtEdge"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/_70sdp"
+        android:fontFamily="@font/lato_bold"
+        android:text="Choose Your Subscription"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimary"
+        android:textSize="@dimen/_16sdp"
+
+        />
+
+            <TextView
+
+                android:id="@+id/SubMonth"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtSub"
+                android:layout_marginLeft="@dimen/_20sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_20sdp"
+                android:background="@drawable/blues_corner"
+                android:fontFamily="@font/lato_semibold"
+                android:gravity="center"
+                android:padding="@dimen/_10sdp"
+                android:text="$4.99 per month"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/_14sdp"
+
+                />
+
+            <TextView
+
+                android:id="@+id/SubYear"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/SubMonth"
+                android:layout_marginLeft="@dimen/_20sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_20sdp"
+                android:background="@drawable/blues_corner"
+                android:fontFamily="@font/lato_semibold"
+                android:gravity="center"
+                android:padding="@dimen/_10sdp"
+                android:text="$29.99 per year"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/_14sdp"
+
+                />
+
+            <TextView
+
+                android:id="@+id/txtfree"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/SubYear"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:fontFamily="@font/lato_bold"
+                android:text="Your first 7 days are free\nCancel anytime "
+                android:textAlignment="center"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/_16sdp"
+
+                />
+
+            <TextView
+
+                android:id="@+id/txtContinue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtfree"
+                android:layout_marginLeft="@dimen/_20sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_20sdp"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:background="@drawable/btn_background"
+                android:fontFamily="@font/lato_bold"
+                android:gravity="center"
+                android:padding="@dimen/_15sdp"
+                android:text="$9.99 per month\nContinue"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/_16sdp"
+                android:visibility="gone"
+
+                />
+
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

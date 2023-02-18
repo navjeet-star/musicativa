@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:id="@+id/textview_recoverytitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/recovery_code"
+        android:fontFamily="@font/lato_bold"
+        android:textSize="@dimen/_18sdp"
+        android:textColor="@color/colorBlack"
+        android:layout_marginStart="@dimen/_30sdp"
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_40sdp"/>
+
+    <TextView
+        android:id="@+id/textview_recoverydes"
+        android:layout_below="@+id/textview_recoverytitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:text="@string/recovery_des"
+        android:fontFamily="@font/lato_regular"
+        android:textSize="@dimen/_12sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginStart="@dimen/_30sdp"
+
+        />
+    
+    <EditText
+        android:id="@+id/editext_revoerytext1"
+        android:layout_below="@+id/textview_recoverydes"
+        android:layout_width="@dimen/_50sdp"
+        android:layout_height="@dimen/_50sdp"
+        android:layout_marginStart="@dimen/_30sdp"
+        android:layout_marginTop="@dimen/_40sdp"
+        android:text="1"
+        android:inputType="number"
+        android:maxLength="1"
+        android:imeOptions="actionNext"
+        android:fontFamily="@font/lato_bold"
+        android:textColor="@color/colorBlack"
+        android:textSize="@dimen/_20sdp"
+        android:gravity="center"
+        android:background="@drawable/recovery_background"/>
+
+    <EditText
+        android:id="@+id/editext_revoerytext2"
+        android:layout_below="@+id/textview_recoverydes"
+        android:layout_width="@dimen/_50sdp"
+        android:layout_height="@dimen/_50sdp"
+        android:layout_toEndOf="@+id/editext_revoerytext1"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_40sdp"
+        android:fontFamily="@font/lato_bold"
+        android:text="8"
+        android:inputType="number"
+        android:maxLength="1"
+        android:imeOptions="actionNext"
+        android:textColor="@color/colorBlack"
+        android:textSize="@dimen/_20sdp"
+        android:gravity="center"
+        android:background="@drawable/recovery_background"/>
+
+    <EditText
+        android:id="@+id/editext_revoerytext3"
+        android:layout_below="@+id/textview_recoverydes"
+        android:layout_width="@dimen/_50sdp"
+        android:layout_height="@dimen/_50sdp"
+        android:layout_toEndOf="@+id/editext_revoerytext2"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_40sdp"
+        android:text="6"
+        android:maxLength="1"
+        android:inputType="number"
+        android:imeOptions="actionNext"
+        android:fontFamily="@font/lato_bold"
+        android:textColor="@color/colorBlack"
+        android:textSize="@dimen/_20sdp"
+        android:gravity="center"
+        android:background="@drawable/recovery_background"/>
+
+    <EditText
+        android:id="@+id/editext_revoerytext4"
+        android:layout_below="@+id/textview_recoverydes"
+        android:layout_width="@dimen/_50sdp"
+        android:layout_height="@dimen/_50sdp"
+        android:layout_toEndOf="@+id/editext_revoerytext3"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_40sdp"
+        android:text="3"
+        android:maxLength="1"
+        android:inputType="number"
+        android:imeOptions="actionDone"
+        android:fontFamily="@font/lato_bold"
+        android:textColor="@color/colorBlack"
+        android:textSize="@dimen/_20sdp"
+        android:gravity="center"
+        android:background="@drawable/recovery_background"/>
+
+    <include layout="@layout/layout_curve"
+        android:layout_below="@+id/editext_revoerytext1"
+        android:layout_marginTop="@dimen/_60sdp"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent" />
+
+    
+
+</RelativeLayout>

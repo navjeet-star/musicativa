@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="data"
+            type="com.developer.musicatiiva.fragments.ProfileInformationFragment" />
+    </data>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="@dimen/_10sdp"
+    >
+
+    <ImageView
+        android:id="@+id/imageview_edit"
+        android:layout_width="@dimen/_40sdp"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:src="@mipmap/ic_edit"
+        tools:ignore="ContentDescription" />
+
+    <ImageView
+        android:id="@+id/imageview_profile"
+        android:layout_width="@dimen/_30sdp"
+        android:layout_height="@dimen/_30sdp"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="@dimen/_40sdp"
+        android:src="@mipmap/ic_profile"
+        android:layout_marginStart="@dimen/_20sdp"
+        />
+    <TextView
+        android:id="@+id/textview_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/name"
+        android:fontFamily="@font/lato_regular"
+        android:gravity="center_horizontal"
+        android:textSize="@dimen/_10sdp"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_toEndOf="@+id/imageview_profile"
+        android:layout_marginTop="@dimen/_42sdp"/>
+
+    <TextView
+        android:id="@+id/text_view_profile_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="@dimen/_12sdp"
+        android:fontFamily="@font/lato_bold"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_below="@+id/textview_name"
+        android:layout_toEndOf="@+id/imageview_profile"
+        />
+    <ImageView
+        android:layout_marginRight="@dimen/_10sdp"
+        android:layout_marginLeft="@dimen/_150sdp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/textview_name"
+        android:layout_toRightOf="@id/text_view_profile_name"
+        android:src="@mipmap/ic_edit"
+        android:layout_width="30dp"
+        android:layout_height="30dp"/>
+
+    <ImageView
+        android:id="@+id/imageview_dotted"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:src="@drawable/dotted"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_below="@+id/imageview_profile"
+        android:layerType="software" />
+
+    <ImageView
+        android:id="@+id/imageview_email"
+        android:layout_width="@dimen/_30sdp"
+        android:layout_height="@dimen/_30sdp"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:src="@mipmap/ic_email_profile"
+        android:layout_below="@+id/imageview_dotted"
+        android:layout_marginStart="@dimen/_20sdp"
+        />
+
+    <TextView
+        android:id="@+id/textview_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/email"
+        android:fontFamily="@font/lato_regular"
+        android:gravity="center_horizontal"
+        android:textSize="@dimen/_10sdp"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_toEndOf="@+id/imageview_email"
+        android:layout_below="@+id/imageview_dotted"
+        android:layout_marginTop="@dimen/_12sdp"/>
+
+    <TextView
+        android:id="@+id/text_view_email_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="@dimen/_12sdp"
+        android:fontFamily="@font/lato_bold"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_below="@+id/textview_email"
+        android:layout_toEndOf="@+id/imageview_profile"
+        />
+
+    <ImageView
+        android:id="@+id/imageview_dotted2"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:src="@drawable/dotted"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_below="@+id/imageview_email"
+        android:layerType="software"
+         />
+
+    <ImageView
+        android:id="@+id/imageview_password"
+        android:layout_width="@dimen/_30sdp"
+        android:layout_height="@dimen/_30sdp"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:src="@mipmap/ic_password_profile"
+        android:layout_below="@+id/imageview_dotted2"
+        android:layout_marginStart="@dimen/_20sdp"
+        />
+
+    <TextView
+        android:id="@+id/textview_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/password"
+        android:fontFamily="@font/lato_regular"
+        android:gravity="center_horizontal"
+        android:textSize="@dimen/_10sdp"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_toEndOf="@+id/imageview_password"
+        android:layout_below="@+id/imageview_dotted2"
+        android:layout_marginTop="@dimen/_12sdp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="@dimen/_12sdp"
+        android:fontFamily="@font/lato_bold"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_below="@+id/textview_password"
+        android:layout_toEndOf="@+id/imageview_profile"
+        />
+
+    <Button
+        android:id="@+id/btn_chnagepassword"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_35sdp"
+        android:background="@drawable/btn_background"
+        android:layout_marginLeft="@dimen/_35sdp"
+        android:layout_marginRight="@dimen/_35sdp"
+        android:layout_below="@+id/imageview_password"
+        android:layout_marginTop="@dimen/_35sdp"
+        android:text="@string/change_password"
+        android:textColor="@color/colorWhite"
+        android:fontFamily="@font/lato_bold"
+        android:textSize="@dimen/_15sdp"
+        android:onClick="@{()->data.onChangePassword()}"/>
+
+
+
+
+
+
+    
+
+</RelativeLayout>
+
+</layout>

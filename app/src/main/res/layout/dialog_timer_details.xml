@@ -1,0 +1,555 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+    <ScrollView android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.cardview.widget.CardView
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="@dimen/_300sdp"
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="@color/colorWhite"
+        app:cardCornerRadius="10dp"
+        android:layout_gravity="center"
+        app:cardElevation="10dp"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="0.0px"
+        android:clipToPadding="false"
+        android:clipChildren="false"
+        app:cardPreventCornerOverlap="false"
+        app:cardUseCompatPadding="true">
+
+
+        <LinearLayout
+            android:layout_marginTop="@dimen/_150sdp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:orientation="vertical"
+            android:padding="10dp">
+
+
+
+              <ImageView
+                  android:id="@+id/cancel"
+                  android:layout_marginTop="@dimen/_5sdp"
+                  android:layout_gravity="right"
+                  android:src="@drawable/ic_cross_blue"
+                  android:layout_width="25dp"
+                  android:layout_height="25dp"/>
+
+                <TextView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ellipsize="end"
+                    android:gravity="center"
+                    android:maxLines="1"
+
+                    android:minLines="1"
+                    android:textStyle="bold"
+                    android:padding="5dp"
+                    android:text="Analysis"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="18sp"
+                    tools:ignore="HardcodedText" />
+            <TextView
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ellipsize="end"
+                android:gravity="left"
+                android:maxLines="1"
+
+                android:minLines="1"
+                android:textStyle="bold"
+                android:paddingRight="@dimen/_5sdp"
+                android:paddingBottom="@dimen/_5sdp"
+                android:paddingTop="@dimen/_5sdp"
+                android:text="Last Month Practice"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="15sp"
+                tools:ignore="HardcodedText" />
+            <LinearLayout
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:textColor="@color/colorPrimary"
+                    android:text="Last Practice Date :"
+                    android:layout_width="0dp"
+
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:id="@+id/textViewLastMonthPracticedDate"
+                    android:textColor="@color/colorBlack"
+                    android:text=""
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_marginRight="@dimen/_8sdp"
+                    android:src="@drawable/hours"
+                    android:layout_width="@dimen/_20sdp"
+                    android:layout_height="@dimen/_20sdp"/>
+                <TextView
+                    android:textColor="@color/colorPrimary"
+                    android:text="Total time :"
+                    android:layout_width="0dp"
+
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:id="@+id/textViewLastMonthPracticedDuration"
+                    android:textColor="@color/colorBlack"
+                    android:text=""
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_marginRight="@dimen/_8sdp"
+                    android:src="@drawable/clicks"
+                    android:layout_width="@dimen/_20sdp"
+                    android:layout_height="@dimen/_20sdp"/>
+                <TextView
+                    android:textColor="@color/colorPrimary"
+                    android:text="No. of points :"
+                    android:layout_width="0dp"
+
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:id="@+id/textViewlastMonthClicks"
+                    android:textColor="@color/colorBlack"
+                    android:text=""
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+            <View
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_1sdp"
+                android:background="@color/colorGrey"/>
+
+            <TextView
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ellipsize="end"
+                android:gravity="left"
+                android:maxLines="1"
+
+                android:minLines="1"
+                android:textStyle="bold"
+                android:paddingRight="@dimen/_5sdp"
+                android:paddingBottom="@dimen/_5sdp"
+                android:paddingTop="@dimen/_5sdp"
+                android:text="This Week Practice"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="15sp"
+                tools:ignore="HardcodedText" />
+            <LinearLayout
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:textColor="@color/colorPrimary"
+                    android:text="Last Practice Date :"
+                    android:layout_width="0dp"
+
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:id="@+id/textViewthisWeekPracticedDate"
+                    android:textColor="@color/colorBlack"
+                    android:text=""
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_marginRight="@dimen/_8sdp"
+                    android:src="@drawable/hours"
+                    android:layout_width="@dimen/_20sdp"
+                    android:layout_height="@dimen/_20sdp"/>
+                <TextView
+                    android:textColor="@color/colorPrimary"
+                    android:text="Total time :"
+                    android:layout_width="0dp"
+
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:id="@+id/textViewThisWeekPracticedDuration"
+                    android:textColor="@color/colorBlack"
+                    android:text=""
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_marginRight="@dimen/_8sdp"
+                    android:src="@drawable/clicks"
+                    android:layout_width="@dimen/_20sdp"
+                    android:layout_height="@dimen/_20sdp"/>
+                <TextView
+                    android:textColor="@color/colorPrimary"
+                    android:text="No. of points :"
+                    android:layout_width="0dp"
+
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:id="@+id/textVewThisWeekClicks"
+                    android:textColor="@color/colorBlack"
+                    android:text=""
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+            <View
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_1sdp"
+                android:background="@color/colorGrey"/>
+
+
+
+
+
+
+            <TextView
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ellipsize="end"
+                android:gravity="left"
+                android:maxLines="1"
+
+                android:minLines="1"
+                android:textStyle="bold"
+                android:paddingRight="@dimen/_5sdp"
+                android:paddingBottom="@dimen/_5sdp"
+                android:paddingTop="@dimen/_5sdp"
+                android:text="Last Duration for today"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="15sp"
+                tools:ignore="HardcodedText" />
+
+
+
+
+
+
+
+            <LinearLayout
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:textColor="@color/colorPrimary"
+                    android:text="Date :"
+                    android:layout_width="0dp"
+
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:id="@+id/textViewTodaysDate"
+                    android:textColor="@color/colorBlack"
+                    android:text=""
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:orientation="horizontal"
+                android:paddingEnd="5dp"
+                >
+
+
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+
+                    android:text="Start time :"
+                    android:textColor="@color/colorPrimaryDark"
+
+
+                    />
+                <TextView
+                    android:id="@+id/textViewTodayStartTime"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:text=""
+                    android:textColor="@color/colorBlack"
+                    />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:orientation="horizontal"
+
+                >
+
+
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+
+                    android:text="Stop time :"
+                    android:textColor="@color/colorPrimaryDark"
+
+
+                    />
+                <TextView
+                    android:id="@+id/textViewTodayStopTime"
+                    android:layout_width="0dp"
+
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+
+                    android:text=""
+                    android:textColor="@color/colorBlack"
+
+
+                    />
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_marginRight="@dimen/_8sdp"
+                    android:src="@drawable/clicks"
+                    android:layout_width="@dimen/_20sdp"
+                    android:layout_height="@dimen/_20sdp"/>
+                <TextView
+                    android:textColor="@color/colorPrimary"
+                    android:text="No. of points :"
+                    android:layout_width="0dp"
+
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"/>
+                </LinearLayout>
+                <TextView
+                    android:id="@+id/textViewTodayClicks"
+                    android:textColor="@color/colorBlack"
+                    android:text=""
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+            <View
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_1sdp"
+                android:background="@color/colorGrey"/>
+            <TextView
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ellipsize="end"
+                android:gravity="left"
+                android:maxLines="1"
+
+                android:minLines="1"
+                android:textStyle="bold"
+                android:paddingRight="@dimen/_5sdp"
+                android:paddingBottom="@dimen/_5sdp"
+                android:paddingTop="@dimen/_5sdp"
+                android:text="Title"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="15sp"
+                tools:ignore="HardcodedText" />
+            <TextView
+
+                android:focusable="true"
+                android:id="@+id/tv_title"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_30sdp"
+
+
+                android:inputType="text"
+                android:maxLines="1"
+
+                android:gravity="center|left"
+                android:textColor="@android:color/black"
+                android:paddingHorizontal="12dp"
+                android:background="@drawable/rectangle_add_image"
+                android:text="Piano title"
+                android:textSize="12sp"
+
+                />
+
+            <TextView
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ellipsize="end"
+                android:gravity="left"
+                android:maxLines="1"
+
+                android:minLines="1"
+                android:textStyle="bold"
+                android:paddingRight="@dimen/_5sdp"
+                android:paddingBottom="@dimen/_5sdp"
+                android:paddingTop="@dimen/_5sdp"
+                android:text="Comment"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="15sp"
+                tools:ignore="HardcodedText" />
+            <EditText
+
+                android:focusable="true"
+                android:id="@+id/editTextComment"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_80sdp"
+
+
+                android:inputType="textMultiLine"
+                android:maxLines="6"
+
+                android:gravity="top|left"
+                android:textColor="@android:color/black"
+                android:padding="12dp"
+                android:background="@drawable/rectangle_add_image"
+                android:text=""
+                android:textSize="12sp"
+
+                />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                <Button
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:layout_gravity="center"
+                    android:id="@+id/textViewSave"
+                    android:layout_width="@dimen/_100sdp"
+
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/button_sub_instrument"
+
+                    android:gravity="center"
+                    android:padding="@dimen/_3sdp"
+                    android:textStyle="bold"
+
+                    android:text="Submit"
+                    android:textAllCaps="true"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="12sp"
+                    tools:ignore="HardcodedText" />
+
+
+
+
+
+
+
+
+
+
+        </LinearLayout>
+
+
+
+
+    </androidx.cardview.widget.CardView>
+    </ScrollView>
+</layout>

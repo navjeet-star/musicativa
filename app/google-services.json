@@ -1,0 +1,90 @@
+{
+  "project_info": {
+    "project_number": "389677814111",
+    "project_id": "musicatiba-8777c",
+    "storage_bucket": "musicatiba-8777c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:389677814111:android:3dc2f8395291d4a784a6ea",
+        "android_client_info": {
+          "package_name": "com.developer.musicatiiva"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "389677814111-dlst8ptvh4q1upqrtk1kh2jjfvd6vrhj.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.developer.musicatiiva",
+            "certificate_hash": "2e4ecb1ac954517d3a1c9c2d81f670c7d9ac0bf9"
+          }
+        },
+        {
+          "client_id": "389677814111-oqo1olcu58gcclm81bji9dnkbunmep9p.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB-YspcdVtcd7NXkQKxPYPk5tg6U1YEVDw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "389677814111-oqo1olcu58gcclm81bji9dnkbunmep9p.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "389677814111-4mk6ns11vd7i299jtvsu9r95320prctg.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "app.musiccatiba.com"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:389677814111:android:069d0b8363eacbe784a6ea",
+        "android_client_info": {
+          "package_name": "com.developer.musicativa"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "389677814111-oqo1olcu58gcclm81bji9dnkbunmep9p.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB-YspcdVtcd7NXkQKxPYPk5tg6U1YEVDw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "389677814111-oqo1olcu58gcclm81bji9dnkbunmep9p.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "389677814111-4mk6ns11vd7i299jtvsu9r95320prctg.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "app.musiccatiba.com"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

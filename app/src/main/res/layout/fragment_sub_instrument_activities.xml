@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    >
+    <data>
+        <variable
+            name="activity"
+            type="com.developer.musicatiiva.fragments.SubInstrumentActivitiesFragment"/>
+    </data>
+
+<FrameLayout
+        android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.SubInstrumentActivitiesFragment">
+    <androidx.core.widget.NestedScrollView
+        android:fillViewport="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+<LinearLayout
+
+
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <androidx.recyclerview.widget.RecyclerView
+        android:visibility="gone"
+        android:id="@+id/rvActivities"
+        android:layout_marginBottom="@dimen/_80sdp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </androidx.recyclerview.widget.RecyclerView>
+    <TextView
+        tools:visibility="visible"
+        android:visibility="gone"
+        android:id="@+id/text_view_no_data_found"
+        android:textColor="@color/colorGrey"
+        android:text="No Activity yet, please create one."
+        android:textSize="18sp"
+        android:gravity="center"
+        android:layout_gravity="center_horizontal|center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+    </FrameLayout>
+
+</LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+    <Button
+        tools:visibility="visible"
+        android:padding="@dimen/_10sdp"
+        android:background="@drawable/button_sub_instrument"
+        android:textColor="@android:color/white"
+        android:text="Create Activity"
+        android:onClick="@{()->activity.createActivity()}"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:layout_gravity="center|bottom"
+        android:layout_marginBottom="@dimen/_20sdp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+
+</FrameLayout>
+
+</layout>

@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single"
+        android:id="@+id/group3">
+        <item
+            android:id="@+id/instruments"
+            android:icon="@drawable/ic_jazz"
+            android:title="Instruments"
+            android:visible="true"/>
+    </group>
+
+    <group android:checkableBehavior="single"
+        android:id="@+id/group2">
+        <item
+            android:id="@+id/profile"
+            android:icon="@mipmap/ic_profile"
+            android:title="Profile"
+            android:visible="true"/>
+    </group>
+    <group android:checkableBehavior="single"
+        android:id="@+id/group1">
+        <item
+            android:id="@+id/reminder"
+            android:icon="@mipmap/rrpp"
+            android:title="Reminder"
+            android:visible="true"/>
+    </group>
+    <group android:checkableBehavior="single"
+        android:id="@+id/group5">
+        <!--<item
+            android:id="@+id/activity"
+            android:icon="@drawable/logout"
+            android:title="Activity"
+            android:visible="true"/>-->
+        <item
+            android:id="@+id/activity"
+            android:icon="@drawable/logout"
+            android:title="Activity"
+            android:visible="true">
+        <menu>
+            <group>
+                <item
+                    android:id="@+id/today"
+                    android:icon="@drawable/clicks"
+                    android:title="Today"/>
+                <item
+                    android:id="@+id/weekly"
+                    android:icon="@drawable/clicks"
+                    android:title="Weekly"/>
+                <item
+                    android:id="@+id/monthly"
+                    android:icon="@drawable/clicks"
+                    android:title="Monthly"/>
+                <item
+                    android:id="@+id/yearly"
+                    android:icon="@drawable/clicks"
+                    android:title="Yearly"/>
+            </group>
+        </menu>
+        </item>
+    </group>
+    <group android:checkableBehavior="single"
+        android:id="@+id/group6">
+        <item
+            android:id="@+id/share"
+            android:icon="@drawable/ic_share"
+            android:title="Share"
+            android:visible="true"/>
+    </group>
+    <group android:checkableBehavior="single"
+        android:id="@+id/group4">
+        <item
+            android:id="@+id/logout"
+            android:icon="@drawable/logout"
+            android:title="Logout"
+            android:visible="true"/>
+    </group>
+
+    <!--<group android:checkableBehavior="single"
+        android:id="@+id/group4">
+        <item
+            android:id="@+id/completed"
+            android:icon="@mipmap/ic_completed_new"
+            android:title="Completed"
+            android:visible="false"/>
+    </group>-->
+
+
+   <!-- <group android:checkableBehavior="single"
+        android:id="@+id/group1">
+        <item
+            android:id="@+id/daily_log"
+            android:icon="@mipmap/ic_daily_log"
+            android:title="Daily log"
+            android:visible="true"/>
+    </group>-->
+
+    <!--<group android:checkableBehavior="single"
+        android:id="@+id/group3">
+        <item
+            android:id="@+id/logout"
+            android:icon="@mipmap/ic_logout_new"
+            android:title="Logout"
+            android:visible="true"/>
+    </group>-->
+
+   <!-- <ImageView
+        android:layout_width="@dimen/_30sdp"
+        android:layout_height="@dimen/_30sdp"
+        android:src="@mipmap/ic_logout_white"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Logout"
+        android:paddingRight="@dimen/_10sdp"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/_15sdp"
+        android:visibility="visible" />
+-->
+
+
+    <!--<group android:checkableBehavior="single"  android:id="@+id/group2">
+        <item
+            android:id="@+id/hic_list"
+            android:icon="@mipmap/ic_timer"
+            android:title="Second" />
+    </group>
+
+    <group android:checkableBehavior="single"  android:id="@+id/group3">
+        <item
+            android:id="@+id/schools"
+            android:icon="@mipmap/ic_timer"
+            android:title="Third" />
+    </group>
+
+    <group android:checkableBehavior="single"  android:id="@+id/group4">
+        <item
+            android:id="@+id/students"
+            android:icon="@mipmap/ic_timer"
+            android:title="Fourth" />
+    </group>
+
+    <group android:checkableBehavior="single"  android:id="@+id/group5">
+        <item
+            android:id="@+id/settings"
+            android:icon="@mipmap/ic_timer"
+            android:title="Fifith" />
+    </group>
+
+    <group android:checkableBehavior="single"  android:id="@+id/group6">
+        <item
+            android:id="@+id/logout"
+            android:icon="@mipmap/ic_timer"
+            android:title="Six" />
+    </group>-->
+
+</menu>

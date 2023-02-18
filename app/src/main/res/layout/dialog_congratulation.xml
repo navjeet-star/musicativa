@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <androidx.cardview.widget.CardView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="@dimen/_250sdp"
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="@color/colorWhite"
+        app:cardCornerRadius="10dp"
+        android:layout_gravity="center"
+        app:cardElevation="10dp"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="0.0px"
+        android:clipToPadding="false"
+        android:clipChildren="false"
+        app:cardPreventCornerOverlap="false"
+        app:cardUseCompatPadding="true">
+
+        <LinearLayout
+
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <ImageView
+
+                android:layout_gravity="center"
+                android:src="@drawable/mlog"
+                android:layout_width="80dp"
+                android:layout_height="80dp"/>
+
+                <TextView
+
+                    android:layout_marginTop="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:gravity="center"
+                    android:text="Musicatiba"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="13sp"
+                    android:visibility="gone"
+                    tools:ignore="HardcodedText"
+
+                    />
+
+            <TextView
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:text="The Musician's Habit"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="13sp"
+                tools:ignore="HardcodedText"
+                android:visibility="gone"
+
+                />
+
+            <TextView
+
+                android:id="@+id/tvTipHeading"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:padding="5dp"
+                android:textStyle="bold"
+                android:text="Congratulations 3 day Streak"
+                android:textColor="@color/colorBlack"
+                android:textSize="16sp"
+                tools:ignore="HardcodedText"
+
+                />
+
+            <TextView
+
+                android:id="@+id/tvTip"
+                android:layout_marginHorizontal="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:fontFamily="@font/lato_semibold"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="Tip of the day: Aim to improve  1% per day, in 1 year, you will have improved 300%"
+                android:textColor="@color/colorBlack"
+                android:textSize="14sp"
+                tools:ignore="HardcodedText"
+
+                />
+
+                <Button
+
+                    android:layout_marginVertical="10dp"
+                    android:id="@+id/tvCancel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/button_sub_instrument"
+                    android:gravity="center"
+                    android:padding="3dp"
+                    android:textStyle="bold"
+                    android:text="Ok"
+                    android:layout_gravity="center"
+                    android:textAllCaps="true"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="12sp"
+                    tools:ignore="HardcodedText"/>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+</layout>
