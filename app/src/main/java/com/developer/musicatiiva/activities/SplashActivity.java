@@ -37,6 +37,7 @@ public class SplashActivity extends AppCompatActivity {
     Context context;
     private JsonPlaceHolderApi jsonPlaceHolderApi;
 
+    //navjeet branch
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
